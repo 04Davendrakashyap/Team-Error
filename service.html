@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E Waste collection form</title>
+  <style>
+    .text-blue{
+      color: rgb(0, 0, 0);
+    }
+  </style>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+</head>
+<body style="background-image: url('roboino.png'); background-size: cover;" class="bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center h-screen">
+
+<div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg p-8 backdrop-filter backdrop-blur-md bg-opacity-5">
+  <h4 class="text-4xl font-semibold mb-6 text-darkgray ">Book a Service</h4>
+
+  <form class="grid grid-cols-1 gap-6">
+    <div>
+      <input type="text" placeholder="Enter Name" class="input-field">
+    </div>
+    <div>
+      <input type="email" placeholder="Enter Email" class="input-field">
+    </div>
+    <div>
+      <input type="tel" placeholder="Enter Contact" class="input-field">
+    </div>
+    <div>
+      <!-- Radio buttons for selecting service type -->
+      <label class="text-darkgray mb-4 block">Select Service Type:</label>
+      <div>
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio" name="serviceType" value="flight">
+          <span class="ml-1 text-white">Teachware</span>
+        </label>
+        <label class="inline-flex items-center ml-5">
+          <input type="radio" class="form-radio" name="serviceType" value="hotel">
+          <span class="ml-1 text-white">Mobileware</span>
+        </label>
+        <label class="inline-flex items-center ml-">
+          <input type="radio" class="form-radio" name="serviceType" value="car">
+          <span class="ml-2 text-white">Gadegetry</span>
+          <label class="inline-flex items-center ml-5">
+            <input type="radio" class="form-radio" name="serviceType" value="car">
+            <span class="ml-1 text-white">Applianceware</span>
+        </label>
+      </div>
+    </div>
+    <div>
+      <input type="text" placeholder="Enter Address" class="input-field">
+    </div>
+    <div>
+      <button type="submit" class="bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-md py-2 px-4 font-semibold transition duration-300 ease-in-out hover:from-blue-600 hover:to-blue-800">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
